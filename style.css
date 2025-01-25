@@ -109,20 +109,71 @@ h2 {
 }
 
 #about {
-    background: #ffffff;
-    padding: 60px 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9; /* Light background for contrast */
+    padding: 50px 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.8;
     text-align: center;
-    animation: fadeInUp 1.5s ease-out;
+}
+
+#about .container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#about h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #007BFF; /* Color to highlight the title */
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 #about p {
-    font-size: 1.2em;
-    line-height: 1.8;
-    max-width: 800px;
-    margin: 0 auto;
+    font-size: 18px;
+    margin: 20px 0;
+    text-align: justify;
 }
+
+#about strong {
+    color: #007BFF; /* Highlight the name */
+}
+
+#about p:hover {
+    color: #555; /* Subtle hover effect on text */
+    transition: color 0.3s ease-in-out;
+}
+
+/* Add a background image or color gradient */
+#about {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: white;
+}
+
+/* Add a shadow to the text to make it pop */
+#about p {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Add a smooth scroll-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#about {
+    animation: fadeIn 1.5s ease-out;
+}
+
 
 .project-grid {
     display: grid;
