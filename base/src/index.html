@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <nav>
+        <div class="logo">
+            <h1>My Portfolio</h1>
+        </div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="about">
+    <div class="container">
+        <h2>About Me</h2>
+        <p>I am a passionate web developer with a knack for creating beautiful and functional websites.</p>
+    </div>
+</section>
+
+<section id="projects">
+    <div class="container">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <a href="https://github.com/Mahred1/ASTU---Book-Management-Sysytem">
+                  <img src="servlet.png" alt="Project 1">
+                     <h3>Project 1</h3>
+                     <p>this is java servlet project that is essential in solving problem in library management system</p>
+                </a>
+            </div>
+            <div class="project-card">
+                <a href="https://github.com/LelisaWaktola/Calculator-/tree/main/src">
+                <img src="hcj.png" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>this is a simple calculator project , it handles basic mathematics portion. Developed by using html , css, javascript.</p>
+                </a>
+            </div>
+            <div class="project-card">
+                <a href="https://github.com/LelisaWaktola/JavaFileTransfer">
+                <img src="socket.png" alt="Project 3">
+                <h3>Project 3</h3>
+                <p>this a java socket project in which file transfer is handled b/n client and server.</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <!-- Contact Form -->
+        <form id="contact-form">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <textarea id="message" name="message" placeholder="Your Feedback" required></textarea>
+            <button type="submit">Send Feedback</button>
+        </form>
+
+        <!-- Success or Error Message -->
+        <div id="response"></div>
+
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+</body>
+</html>
