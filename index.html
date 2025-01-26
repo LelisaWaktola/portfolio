@@ -3,90 +3,228 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Portfolio website complete</title>
+
 </head>
 <body>
-<header>
-    <nav>
-        <div class="logo">
-            <h1>My Portfolio</h1>
+<!--===== HEADER =====-->
+<header class="l-header">
+    <nav class="nav bd-grid">
+        <div>
+            <a href="#home" class="nav__logo">Lalo</a>
         </div>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                <li class="nav__item"><a href="#certificate" class="nav__link">Certificate</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+
+            </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+            <i class='bx bx-menu'></i>
+        </div>
     </nav>
 </header>
 
-<section id="about">
-    <div class="container">
-        <h2>About Me</h2>
-        <p>Hi, I'm <strong>Lelisa Waktola</strong>, a passionate Web Developer with a solid foundation in HTML, CSS, and JavaScript. Currently, I'm expanding my skills by learning advanced frameworks like React and Node.js, which I believe will allow me to take on even more exciting challenges in the world of web development.</p>
+<main class="l-main">
+    <!--===== HOME =====-->
+    <section class="home bd-grid" id="home">
+        <div class="home__data">
+            <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">LELISA W</span><br> </h1>
 
-        <p>In addition to web development, I am also proficient in Java, which has equipped me with strong problem-solving and algorithmic skills. Whether building dynamic websites or crafting efficient backend solutions, I love to explore new technologies and continuously improve my skill set.</p>
-
-        <p>Though I’m still in the process of mastering these tools, I am dedicated to learning and growing every day. Let’s connect and build something innovative together!</p>
-    </div>
-</section>
-
-
-<section id="projects">
-    <div class="container">
-        <h2>Projects</h2>
-        <div class="project-grid">
-            <div class="project-card">
-                <a href="https://github.com/Mahred1/ASTU---Book-Management-Sysytem">
-                  <img src="servlet.png" alt="Project 1">
-                     <h3>Project 1</h3>
-                     <p>this is java servlet project that is essential in solving problem in library management system</p>
-                </a>
-            </div>
-            <div class="project-card">
-                <a href="https://github.com/LelisaWaktola/Calculator-/tree/main/src">
-                <img src="hcj.png" alt="Project 2">
-                <h3>Project 2</h3>
-                <p>this is a simple calculator project , it handles basic mathematics portion. Developed by using html , css, javascript.</p>
-                </a>
-            </div>
-            <div class="project-card">
-                <a href="https://github.com/LelisaWaktola/JavaFileTransfer">
-                <img src="socket.png" alt="Project 3">
-                <h3>Project 3</h3>
-                <p>this a java socket project in which file transfer is handled b/n client and server.</p>
-                </a>
-            </div>
+            <a href="#contact" class="button">Contact</a>
         </div>
+
+        <div class="home__social">
+            <a href="https://www.linkedin.com/in/lelisa-waktola-834683348?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://be.net/lelisawaktola
+" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
+            <a href="https://github.com/LelisaWaktola" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+        </div>
+
+        <div class="home__img">
+            <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <mask id="mask0" mask-type="alpha">
+                    <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                </mask>
+                <g mask="url(#mask0)">
+                    <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                    <image class="home__blob-img" x="50" y="60" href="assets/img/perfil.jpg"/>
+                </g>
+            </svg>
+        </div>
+    </section>
+
+    <!--===== ABOUT =====-->
+    <section class="about section " id="about">
+        <h2 class="section-title">About</h2>
+
+        <div class="about__container bd-grid">
+            <div class="about__img">
+                <img src="assets/img/about.jpg" alt="">
+            </div>
+
+            <div>
+                <h2 class="about__subtitle">I'am LELISA WAKTOLA</h2>
+                <p class="about__text">A passionate Web Developer with a solid foundation in HTML, CSS, and JavaScript. Currently, I'm expanding my skills by learning advanced frameworks like React and Node.js, which I believe will allow me to take on even more exciting challenges in the world of web development.
+                    In addition to web development, I am also proficient in Java, which has equipped me with strong problem-solving and algorithmic skills. Whether building dynamic websites or crafting efficient backend solutions, I love to explore new technologies and continuously improve my skill set.
+                    Though I’m still in the process of mastering these tools, I am dedicated to learning and growing every day. Let’s connect and build something innovative together!</div>
+        </div>
+    </section>
+
+    <!--===== SKILLS =====-->
+    <section class="skills section" id="skills">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills__container bd-grid">
+            <div>
+                <h2 class="skills__subtitle">Profesional Skills</h2>
+                <p class="skills__text"><div class="skills__data">
+                <div class="skills__names">
+                    <i class='bx bxl-html5 skills__icon'></i>
+                    <span class="skills__name">HTML5</span>
+                </div>
+                <div class="skills__bar skills__html">
+
+                </div>
+                <div>
+                    <span class="skills__percentage"></span>
+                </div>
+            </div>
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <i class='bx bxl-css3 skills__icon'></i>
+                        <span class="skills__name">CSS3</span>
+                    </div>
+                    <div class="skills__bar skills__css">
+
+                    </div>
+                    <div>
+                        <span class="skills__percentage"></span>
+                    </div>
+                </div>
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <i class='bx bxl-javascript skills__icon' ></i>
+                        <span class="skills__name">JAVASCRIPT</span>
+                    </div>
+                    <div class="skills__bar skills__js">
+
+                    </div>
+                    <div>
+                        <span class="skills__percentage"></span>
+                    </div>
+                </div>
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <i class='bx bxs-paint skills__icon'></i>
+                        <span class="skills__name">UX/UI</span>
+                    </div>
+                    <div class="skills__bar skills__ux">
+
+                    </div>
+                    <div>
+                        <span class="skills__percentage"></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--===== WORK =====-->
+    <section class="work section" id="work">
+        <h2 class="section-title">Work</h2>
+
+        <div class="work__container bd-grid">
+            <a href="https://github.com/LelisaWaktola/JavaFileTransfer.git" class="work__img">
+                <img src="assets/img/work1.png" alt="">
+                <p>This is socket program developed in java.
+                    The client transfer file and the server store the file in folder. </p>
+            </a>
+            <a href="https://github.com/LelisaWaktola/ELearning/tree/main/src/main" class="work__img">
+                <img src="assets/img/work2.png" alt="">
+                <p>This is java servlet project that i am currently doing.
+                    The project allows individual to sign up and apply for paid or free courses. I hope, I will finsh it.  </p>
+            </a>
+            <a href="https://github.com/LelisaWaktola/Calculator-/tree/main/src" class="work__img">
+                <img src="assets/img/work3.png" alt="">
+                <p>This project is a simple calculator built in html, css, js.
+                    It handles every basic mathematics operation.</p>
+            </a>
+
+        </div>
+    </section>
+
+
+    <!--===== WORK =====-->
+    <section class="certificate section" id="certificate">
+        <h2 class="section-title">Certificate</h2>
+
+        <div class="work__container bd-grid">
+            <a href="" target="_blank">
+                <img src="assets/img/certificate.png" alt="Certificate" class="certificate-image">
+            </a>
+            <a href="" target="_blank">
+                <img src="assets/img/web.png" alt="Certificate" class="certificate-image">
+            </a>
+
+            <a href="" target="_blank">
+                <img src="assets/img/python.png" alt="Certificate" class="certificate-image">
+            </a>
+        </div>
+    </section>
+
+
+
+    <!--===== CONTACT =====-->
+    <section class="contact section" id="contact">
+        <h2 class="section-title">Contact</h2>
+
+        <div class="contact__container bd-grid">
+            <form action="https://formspree.io/f/xwpvvozl" method="post">
+                <input type="text" id="name" name="name" placeholder="Name" class="contact__input" required>
+                <input type="email" id="email" name="email" placeholder="Email" class="contact__input" required>
+                <input type="number" id="contact_no" name="contact_no" placeholder="Phone" class="contact__input" required>
+                <textarea name="message" id="message" placeholder="Your Message" cols="30" rows="10" class="contact__input" required></textarea>
+                <input type="submit" class="contact__button button" value="Send">
+            </form>
+
+
+        </div>
+    </section>
+
+
+</main>
+
+<!--===== FOOTER =====-->
+<footer class="footer">
+    <p class="footer__title">Lalo Hope</p>
+    <div class="footer__social">
+        <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+        <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+        <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
     </div>
-</section>
-
-<section id="contact">
-    <div class="container">
-        <h2>Contact Me</h2>
-        <!-- Contact Form -->
-        <form id="contact-form">
-            <input type="text" id="name" name="name" placeholder="Your Name" required>
-            <input type="email" id="email" name="email" placeholder="Your Email" required>
-            <textarea id="message" name="message" placeholder="Your Feedback" required></textarea>
-            <button type="submit">Send Feedback</button>
-        </form>
-
-        <!-- Success or Error Message -->
-        <div id="response"></div>
-
-    </div>
-</section>
-
-<footer>
-    <div class="container">
-        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
-    </div>
+    <p class="footer__copy">&#169; All rigths reserved</p>
 </footer>
 
-<script src="script.js"></script>
-<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
+<!--===== SCROLL REVEAL =====-->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!--===== MAIN JS =====-->
+<script src="assets/js/main.js"></script>
 </body>
 </html>
