@@ -5,7 +5,6 @@ import HeroSection from './components/HeroSection';
 import AboutSection from './components/AboutSection';
 import SkillsSection from './components/SkillsSection';
 import FeaturedProjectsSection from './components/FeaturedProjectsSection';
-import TestimonialsSection from './components/TestimonialsSection';
 
 export const metadata: Metadata = {
   title: 'Portfolio - Creative Developer & Designer',
@@ -22,7 +21,6 @@ export default function Homepage() {
         <AboutSection />
         <SkillsSection />
         <FeaturedProjectsSection />
-        <TestimonialsSection />
       </main>
       <Footer />
     </>

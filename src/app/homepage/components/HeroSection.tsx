@@ -90,7 +90,7 @@ export default function HeroSection() {
               <div className="absolute inset-0 bg-gradient-to-br from-primary to-secondary rounded-full blur-2xl opacity-30 animate-pulse-glow" />
               <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-white shadow-2xl">
                 <AppImage
-                  src="https://img.rocket.new/generatedImages/rocket_gen_img_1ec5c059a-1763298163128.png"
+                  src="/assets/images/my_photo.png"
                   alt="Professional headshot of a smiling person in business casual attire against neutral background"
                   className="w-full h-full object-cover animate-ken-burns" />
 
@@ -108,15 +108,17 @@ export default function HeroSection() {
             </div>
 
             <h1 className="font-heading font-bold text-display-md md:text-display-lg text-foreground">
-              Creative Developer
+              Modern Web Application Developer
               <br />
               <span className="text-gradient">& Designer</span>
             </h1>
 
-            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Crafting beautiful digital experiences with clean code and thoughtful design.
-              Specialized in modern web technologies and user-centric solutions.
-            </p>
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+            Full-stack web developer specializing in modern Spring frameworks,
+            backend APIs, and responsive UI design.
+            I focus on performance, scalability, and clean architecture.
+          </p>
+
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">

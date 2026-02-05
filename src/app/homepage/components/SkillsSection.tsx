@@ -4,19 +4,26 @@ interface Skill {
   id: string;
   name: string;
   icon: string;
-  level: number;
   category: string;
 }
 
 const skills: Skill[] = [
-  { id: 'skill_react', name: 'React', icon: 'CodeBracketIcon', level: 95, category: 'Frontend' },
-  { id: 'skill_typescript', name: 'TypeScript', icon: 'CommandLineIcon', level: 90, category: 'Language' },
-  { id: 'skill_nextjs', name: 'Next.js', icon: 'RocketLaunchIcon', level: 92, category: 'Framework' },
-  { id: 'skill_tailwind', name: 'Tailwind CSS', icon: 'PaintBrushIcon', level: 95, category: 'Styling' },
-  { id: 'skill_node', name: 'Node.js', icon: 'ServerIcon', level: 88, category: 'Backend' },
-  { id: 'skill_figma', name: 'Figma', icon: 'SwatchIcon', level: 90, category: 'Design' },
-  { id: 'skill_git', name: 'Git', icon: 'DocumentTextIcon', level: 92, category: 'Tools' },
-  { id: 'skill_aws', name: 'AWS', icon: 'CloudIcon', level: 85, category: 'Cloud' },
+  // Languages
+  { id: 'skill_java', name: 'Java', icon: 'CpuChipIcon', category: 'Language' },
+  { id: 'skill_typescript', name: 'TypeScript', icon: 'CommandLineIcon', category: 'Language' },
+  { id: 'skill_python', name: 'Python', icon: 'BeakerIcon', category: 'Language' },
+  // Frameworks
+  { id: 'skill_spring', name: 'Spring Boot', icon: 'RocketLaunchIcon', category: 'Framework' },
+  // Frontend / Styling
+  { id: 'skill_tailwind', name: 'Tailwind CSS', icon: 'PaintBrushIcon', category: 'Styling' },
+  // Backend
+  { id: 'skill_node', name: 'Node.js', icon: 'ServerStackIcon', category: 'Backend' },
+  { id: 'skill_sql', name: 'SQL', icon: 'CircleStackIcon', category: 'Backend' },
+  { id: 'skill_mongodb', name: 'MongoDB', icon: 'CircleStackIcon', category: 'Backend' },
+  // Tools
+  { id: 'skill_git', name: 'Git', icon: 'CodeBracketSquareIcon', category: 'Tools' },
+ // Cloud
+  { id: 'skill_aws', name: 'AWS', icon: 'CloudIcon', category: 'Cloud' },
 ];
 
 export default function SkillsSection() {
@@ -55,19 +62,7 @@ export default function SkillsSection() {
                 </div>
               </div>
 
-              {/* Progress Bar */}
-              <div className="space-y-2">
-                <div className="flex justify-between items-center">
-                  <span className="text-sm text-muted-foreground">Proficiency</span>
-                  <span className="text-sm font-semibold text-foreground">{skill.level}%</span>
-                </div>
-                <div className="h-2 bg-muted rounded-full overflow-hidden">
-                  <div
-                    className="h-full bg-gradient-to-r from-primary to-secondary rounded-full transition-all duration-1000 ease-out"
-                    style={{ width: `${skill.level}%` }}
-                  />
-                </div>
-              </div>
+              
             </div>
           ))}
         </div>

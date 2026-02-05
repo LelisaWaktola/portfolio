@@ -64,15 +64,11 @@ export default function ContactPage() {
               {[
                 {
                   question: 'What is your typical project timeline?',
-                  answer: 'Project timelines vary based on scope and complexity. A typical website takes 4-6 weeks, while larger applications can take 2-3 months. I provide detailed timelines during our initial consultation.',
+                  answer: ' I provide detailed timelines during our initial consultation.',
                 },
                 {
                   question: 'Do you work with clients remotely?',
-                  answer: 'Yes! I work with clients worldwide through video calls, project management tools, and regular updates. Time zone differences are never an issue.',
-                },
-                {
-                  question: 'What is your pricing structure?',
-                  answer: 'I offer both project-based and hourly rates depending on your needs. After understanding your requirements, I provide a detailed proposal with transparent pricing and deliverables.',
+                  answer: 'Yes! I work with clients worldwide through Github/Git, project management tools, and regular updates. Time zone differences are never an issue.',
                 },
                 {
                   question: 'Do you provide ongoing support?',
@@ -114,13 +110,16 @@ export default function ContactPage() {
                 Sometimes it's easier to talk things through. Schedule a free 30-minute
                 consultation to discuss your project.
               </p>
-              <a
-                href="#schedule"
-                className="btn btn-primary"
-              >
-                Schedule a Call
-                <Icon name="CalendarIcon" size={18} />
+               <a
+                  href="https://calendar.app.google/7T5LnT9FuLa3Fz2B9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary"
+                >
+                  Schedule a Call
+                  <Icon name="CalendarIcon" size={18} />
               </a>
+
             </div>
           </div>
         </section>

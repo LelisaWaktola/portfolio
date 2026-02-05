@@ -14,36 +14,44 @@ interface Project {
 }
 
 const featuredProjects: Project[] = [
-{
-  id: 'project_ecommerce',
-  title: 'E-Commerce Platform',
-  category: 'Web Development',
-  description: 'Full-stack marketplace with real-time inventory and payment processing',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_12d7de71f-1764676026833.png",
-  imageAlt: 'Modern e-commerce website interface showing product grid on laptop screen',
-  tags: ['Next.js', 'Stripe', 'PostgreSQL'],
-  link: '/portfolio'
-},
-{
-  id: 'project_dashboard',
-  title: 'Analytics Dashboard',
-  category: 'SaaS Product',
-  description: 'Real-time data visualization platform for business intelligence',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_1011e1b57-1768551941858.png",
-  imageAlt: 'Analytics dashboard with colorful charts and graphs on computer monitor',
-  tags: ['React', 'D3.js', 'Node.js'],
-  link: '/portfolio'
-},
-{
-  id: 'project_mobile',
-  title: 'Fitness Tracking App',
-  category: 'Mobile Design',
-  description: 'Cross-platform mobile app with workout tracking and social features',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_1c29d13b2-1764639853707.png",
-  imageAlt: 'Smartphone displaying fitness app interface with workout statistics',
-  tags: ['React Native', 'Firebase', 'Figma'],
-  link: '/portfolio'
-}];
+  {
+    id: 'project_lms',
+    title: 'Loan Management System',
+    category: 'Web Development',
+    description:
+      'A full-stack web application designed to manage loans, users, and repayment schedules with secure authentication and an admin dashboard.',
+    image: '/assets/images/loan.jpg',
+    imageAlt:
+      'Loan management system admin dashboard showing financial analytics and loan data on a laptop screen',
+    tags: ['Spring Boot', 'React', 'PostgreSQL'],
+    link: 'https://github.com/LelisaWaktola/Loan_Managment',
+  },
+  {
+    id: 'project_stolen_pc_detector',
+    title: 'Smart PC Tracker App',
+    category: 'Web Development',
+    description:
+      'A web-based security application that verifies and tracks PCs through device scanning at library entry points using a centralized dashboard.',
+    image: '/assets/images/smartpc.jpg',
+    imageAlt:
+      'Security monitoring dashboard on a laptop showing system status, alerts, and device tracking information',
+    tags: ['React', 'Express.js', 'REST API', 'MongoDB'],
+    link: 'https://github.com/Ibnunezif/device-ownership-detector/tree/frontend_ui',
+  },
+  {
+    id: 'project_portfolio',
+    title: 'Developer Portfolio Website',
+    category: 'Web Development',
+    description:
+      'A responsive personal portfolio website created to present projects, technical skills, and professional information in a clean layout.',
+    image: '/assets/images/portfolio.jpg',
+    imageAlt:
+      'Developer portfolio website displayed on a laptop screen with projects and skills sections',
+    tags: ['Next.js', 'Tailwind CSS', 'TypeScript'],
+    link: 'https://github.com/LelisaWaktola/portfolio',
+  },
+];
+
 
 
 export default function FeaturedProjectsSection() {

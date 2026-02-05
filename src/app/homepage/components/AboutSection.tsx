@@ -7,26 +7,22 @@ interface Achievement {
   title: string;
   description: string;
 }
-
 const achievements: Achievement[] = [
-{
-  id: 'achievement_1',
-  icon: 'TrophyIcon',
-  title: 'Award Winner',
-  description: 'Best UI/UX Design 2025'
-},
-{
-  id: 'achievement_2',
-  icon: 'AcademicCapIcon',
-  title: 'Certified Expert',
-  description: 'Google Cloud Professional'
-},
-{
-  id: 'achievement_3',
-  icon: 'SparklesIcon',
-  title: 'Innovation Leader',
-  description: 'Tech Conference Speaker'
-}];
+  {
+    id: 'achievement_udacity_android',
+    icon: 'DevicePhoneMobileIcon',
+    title: 'Android Developer Fundamentals',
+    description:
+      'Udacity certification (Jan 2026). Focused on Android app development fundamentals, UI components, activities, and application lifecycle.',
+  },
+  {
+    id: 'achievement_udacity_programming',
+    icon: 'CodeBracketIcon',
+    title: 'Programming Fundamentals',
+    description:
+      'Udacity certification (Aug 2024). Covered core programming concepts with hands-on practice in JavaScript, HTML5, and CSS.',
+  },
+];
 
 
 export default function AboutSection() {
@@ -34,19 +30,18 @@ export default function AboutSection() {
     <section className="section bg-muted/30">
       <div className="container-custom">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
+
           {/* Left: Image */}
           <div className="relative order-2 lg:order-1">
             <div className="absolute -inset-4 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl blur-2xl" />
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-border">
+            <div className="relative w-48 h-52 md:w-64 md:h-72 rounded-full overflow-hidden">
               <AppImage
-                src="https://img.rocket.new/generatedImages/rocket_gen_img_14fef1498-1767698536258.png"
-                alt="Person working on laptop with code on screen in modern office environment"
-                className="w-full h-[500px] object-cover" />
-
+                src="/assets/images/my_photo.png"
+                alt="Professional headshot"
+                className="w-full h-full object-cover animate-ken-burns"
+              />
             </div>
-            {/* Decorative Element */}
-            <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary rounded-3xl opacity-10" />
-          </div>
+          </div> {/* ✅ CLOSED Left Image */}
 
           {/* Right: Content */}
           <div className="space-y-8 order-1 lg:order-2">
@@ -54,29 +49,35 @@ export default function AboutSection() {
               <h2 className="font-heading font-bold text-display-sm md:text-display-md text-foreground">
                 About Me
               </h2>
+
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I'm a passionate full-stack developer and designer with over 5 years of experience
-                creating digital products that make a difference. My expertise spans from building
-                scalable web applications to crafting intuitive user interfaces.
+                I am a Full Stack Java Developer with 2 years of hands-on experience
+                building scalable and reliable applications using Java and Spring Boot.
+                I specialize in developing RESTful APIs, implementing business logic,
+                and working across the full development lifecycle—from requirements
+                analysis to deployment.
               </p>
+
               <p className="text-lg text-muted-foreground leading-relaxed">
-                When I'm not coding, you'll find me exploring new design trends, contributing to
-                open-source projects, or sharing knowledge with the developer community through
-                talks and articles.
+                <strong>Core skills:</strong> Java, Spring Boot, REST APIs, SQL & MongoDB,
+                Git, Problem Solving. I am passionate about writing clean, maintainable
+                code and continuously improving my skills. I am currently seeking a
+                remote Web Application Development role.
               </p>
             </div>
 
             {/* Achievements Grid */}
             <div className="grid md:grid-cols-3 gap-4">
-              {achievements.map((achievement) =>
-              <div
-                key={achievement.id}
-                className="p-4 rounded-xl bg-card border border-border hover:border-primary/30 transition-colors">
-
+              {achievements.map((achievement) => (
+                <div
+                  key={achievement.id}
+                  className="p-4 rounded-xl bg-card border border-border hover:border-primary/30 transition-colors"
+                >
                   <Icon
-                  name={achievement.icon as any}
-                  size={24}
-                  className="text-primary mb-3" />
+                    name={achievement.icon as any}
+                    size={24}
+                    className="text-primary mb-3"
+                  />
 
                   <h3 className="font-semibold text-sm text-foreground mb-1">
                     {achievement.title}
@@ -85,22 +86,20 @@ export default function AboutSection() {
                     {achievement.description}
                   </p>
                 </div>
-              )}
+              ))}
             </div>
 
             {/* CTA */}
             <div className="flex gap-4">
-              <a
-                href="#resume"
-                className="btn btn-primary">
-
+              <a href="#resume" className="btn btn-primary">
                 Download Resume
                 <Icon name="ArrowDownTrayIcon" size={18} />
               </a>
             </div>
           </div>
+
         </div>
       </div>
-    </section>);
-
+    </section>
+  );
 }

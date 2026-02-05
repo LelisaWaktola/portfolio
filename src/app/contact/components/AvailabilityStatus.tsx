@@ -38,16 +38,18 @@ export default function AvailabilityStatus() {
           <Icon name="BriefcaseIcon" size={20} />
           <div>
             <p className="font-semibold">Project Type</p>
-            <p className="text-sm text-white/80">Full-time & Contract</p>
+            <p className="text-sm text-white/80">Remote</p>
           </div>
         </div>
       </div>
 
       <div className="mt-6 pt-6 border-t border-white/20">
-        <a
-          href="#resume"
-          className="flex items-center justify-center gap-2 w-full py-3 px-6 bg-white text-primary rounded-xl font-semibold hover:shadow-lg transition-all"
-        >
+          <a
+            href="assets/resume/MyResume.pdf"
+            download
+            className="flex items-center justify-center gap-2 w-full py-3 px-6 bg-white text-primary rounded-xl font-semibold hover:shadow-lg transition-all"
+          >
+
           <Icon name="ArrowDownTrayIcon" size={18} />
           Download Resume
         </a>

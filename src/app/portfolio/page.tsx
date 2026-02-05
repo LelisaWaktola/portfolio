@@ -2,7 +2,6 @@ import { Metadata } from 'next';
 import Header from '@/components/common/Header';
 import Footer from '@/components/common/Footer';
 import PortfolioInteractive from './components/PortfolioInteractive';
-import CaseStudySection from './components/CaseStudySection';
 import Icon from '@/components/ui/AppIcon';
 
 export const metadata: Metadata = {
@@ -22,15 +21,14 @@ export default function PortfolioPage() {
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full border border-primary/20 mb-6">
               <Icon name="BriefcaseIcon" size={18} className="text-primary" />
               <span className="text-sm font-medium text-primary">
-                50+ Completed Projects
+                10+ Completed Projects
               </span>
             </div>
             <h1 className="font-heading font-bold text-display-md md:text-display-lg text-foreground mb-6">
               Selected Work
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              A curated collection of projects showcasing my expertise in web development,
-              mobile applications, and user interface design
+              A curated collection of projects showcasing my expertise in Full Stack web development.
             </p>
           </div>
         </section>
@@ -41,10 +39,6 @@ export default function PortfolioPage() {
             <PortfolioInteractive />
           </div>
         </section>
-
-        {/* Case Study */}
-        <CaseStudySection />
-
         {/* CTA */}
         <section className="section bg-muted/30">
           <div className="container-custom text-center">
