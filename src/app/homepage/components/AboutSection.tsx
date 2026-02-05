@@ -91,7 +91,7 @@ export default function AboutSection() {
 
             {/* CTA */}
             <div className="flex gap-4">
-              <a href="#resume" className="btn btn-primary">
+              <a href="/assets/resume/MyResume.pdf" className="btn btn-primary">
                 Download Resume
                 <Icon name="ArrowDownTrayIcon" size={18} />
               </a>
