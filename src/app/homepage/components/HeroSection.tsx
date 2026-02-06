@@ -15,15 +15,15 @@ const floatingCards: FloatingCard[] = [
   id: 'card_experience',
   icon: 'BriefcaseIcon',
   label: 'Experience',
-  value: '5+ Years',
+  value: '2+ Years',
   position: 'top-20 left-10',
   delay: 'stagger-1'
 },
 {
   id: 'card_projects',
-  icon: 'RocketLaunchIcon',
+  icon: 'FolderIcon',
   label: 'Projects',
-  value: '50+ Done',
+  value: '20+ Completed',
   position: 'top-40 right-20',
   delay: 'stagger-2'
 },
@@ -44,7 +44,6 @@ const floatingCards: FloatingCard[] = [
   delay: 'stagger-4'
 }];
 
-
 export default function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
@@ -64,7 +63,7 @@ export default function HeroSection() {
               {floatingCards.map((card) =>
               <div
                 key={card.id}
-                className={`absolute ${card.position} animate-float ${card.delay}`}>
+                className={`absolute ${card.position} animate-float ${card.delay}`}>  
 
                   <div className="glass rounded-2xl p-4 shadow-lg hover:shadow-glow transition-all cursor-default">
                     <div className="flex items-center gap-3">
@@ -147,5 +146,4 @@ export default function HeroSection() {
         </div>
       </div>
     </section>);
-
 }
